@@ -11,21 +11,32 @@
     <p id="description">A short survey on smartphones</p>
     <form id="survey-form">
         <label for="name">Enter your name</label>
-        <input type="text" id="name-label" name="name"  placeholder="Enter your name">><br><br>
+        <input type="text" id="name-label" name="name"  placeholder="Enter your name"><br><br>
         <label for="email">Enter your email</label>
         <input type="email" required id="email-label" name="emailid" placeholder="Enter your email"><br><br>
         <label for="age">Enter your age</label>
-        <input type="number" min="2" max="90" required id="number-label" name="ageid"  placeholder="Enter your age">><br><br>
+        <input type="number" min="2" max="90" required id="number-label" name="ageid"  placeholder="Enter your age"><br><br>
+        <label for="nationality">Enter your nationality</label><br>
+        <input type="radio" value="value1" name="foo" /> Asia<br> 
+            <input type="radio" value="value2" name="foo" /> Europe<br>
+            <input type="radio" value="value3" name="foo" /> Africa<br>
+            <input type="radio" value="value4" name="foo" /> America<br><br>
+        <label for="gender">Enter your gender</label><br>
+            <input type="radio" value="value5" name="foo1" /> Male<br>
+            <input type="radio" value="value6" name="foo1" /> Female<br>
+            <input type="radio" value="value7" name="foo1" /> Other<br><br>
+        <label for="gender">Choose your mobile phone brand</label><br>
+        <input type="checkbox" id="val1" name="samsung" value="mob1">Samsung<br>
+        <input type="checkbox" id="val2" name="apple" value="mob2">Apple<br>
+        <input type="checkbox" id="val3" name="asus" value="mob3">Asus<br><br>
+        <label for="PhoneOS">Choose your Operating System:</label>
+        <select id="dropdown" name="Phone-OS">
+        <option value="Android">Android</option>
+        <option value="Apple">Apple</option>
+        <option value="Blackberry">Blackberry</option>
+        <option value="Windows">Windows</option>
+        </select><br><br>
         <input type="submit" value="Submit Now!">
-        <div class="form-group">
-            <p id="quest">What type of smart phone have you used ?</p>
-            <section name="roll" id="dropdown" class="formControl" required>
-                <option value="" disabled selected> Select you faverite type of phone</option>
-                <option value="iPhone">iPhone</option>
-                <option value="Samsung">Samsung</option>
-                <option value="One-Phone">One-Phone</option>
-            </section>
-        </div>
     </form>
 </body>
 </html>

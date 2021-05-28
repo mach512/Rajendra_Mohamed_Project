@@ -11,12 +11,21 @@
     <p id="description">A short survey on smartphones</p>
     <form id="survey-form">
         <label for="name">Enter your name</label>
-        <input type="text" id="name-label" name="name"><br><br>
+        <input type="text" id="name-label" name="name"  placeholder="Enter your name">><br><br>
         <label for="email">Enter your email</label>
         <input type="email" required id="email-label" name="emailid" placeholder="Enter your email"><br><br>
         <label for="age">Enter your age</label>
-        <input type="number" min="2" max="90" required id="number-label" name="ageid"><br><br>
+        <input type="number" min="2" max="90" required id="number-label" name="ageid"  placeholder="Enter your age">><br><br>
         <input type="submit" value="Submit Now!">
+        <div class="form-group">
+            <p id="quest">What type of smart phone have you used ?</p>
+            <section name="roll" id="dropdown" class="formControl" required>
+                <option value="" disabled selected> Select you faverite type of phone</option>
+                <option value="iPhone">iPhone</option>
+                <option value="Samsung">Samsung</option>
+                <option value="One-Phone">One-Phone</option>
+            </section>
+        </div>
     </form>
 </body>
 </html>
